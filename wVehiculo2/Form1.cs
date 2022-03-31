@@ -139,10 +139,10 @@ namespace wVehiculo2
                 txtPotencia.Enabled = true;
             }
         }
-        private void FrmRegistroVehiculo_FormClosing(object sender, EventArgs e)
-        {
+        //private void FrmRegistroVehiculo_FormClosing(object sender, EventArgs e)
+        //{
  
-        }
+        //}
 
         private void FrmRegistroVehiculo_FormClosing(object sender, FormClosingEventArgs e)
         {

@@ -9,7 +9,7 @@ namespace wVehiculo2
     class clsCrearParticular
     {
 
-        //Declaracion de variables
+        //Declaracion de variables metodo constructor
         private string Placa;
         private string Color;
         private string Modelo;

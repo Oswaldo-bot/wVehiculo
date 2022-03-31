@@ -9,10 +9,10 @@ namespace wVehiculo2
      class clsCrearTaxi
     {
 
-        //Declaracion de variables
+        //Declaracion de variables metodo constructor
         private string Placa;
         private string Marca;
-        private string Color1;
+        private string Color;
         private string Modelo;
 
 
@@ -29,8 +29,8 @@ namespace wVehiculo2
         }
         public string color
         {
-            get { return Color1; }
-            set { Color1 = value; }
+            get { return Color; }
+            set { Color = value; }
         }
 
         public string modelo

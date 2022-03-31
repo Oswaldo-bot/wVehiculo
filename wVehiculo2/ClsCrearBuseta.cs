@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace wVehiculo2
 {
      public class ClsCrearBuseta
-   { 
-        //Declaracion de variables
+   {
+        //Declaracion de variables metodo constructor
         private string Placa;
         private string Marca;
         private string Color;

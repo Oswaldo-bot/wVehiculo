@@ -42,9 +42,9 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.gpbVehiculos = new System.Windows.Forms.GroupBox();
-            this.rdbParticular = new System.Windows.Forms.RadioButton();
-            this.rdbBuseta = new System.Windows.Forms.RadioButton();
-            this.rdbTaxi = new System.Windows.Forms.RadioButton();
+            this.rdoParticular = new System.Windows.Forms.RadioButton();
+            this.rdoBuseta = new System.Windows.Forms.RadioButton();
+            this.rdoTaxi = new System.Windows.Forms.RadioButton();
             this.gpbVehiculos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,9 +150,9 @@
             // 
             // gpbVehiculos
             // 
-            this.gpbVehiculos.Controls.Add(this.rdbParticular);
-            this.gpbVehiculos.Controls.Add(this.rdbBuseta);
-            this.gpbVehiculos.Controls.Add(this.rdbTaxi);
+            this.gpbVehiculos.Controls.Add(this.rdoParticular);
+            this.gpbVehiculos.Controls.Add(this.rdoBuseta);
+            this.gpbVehiculos.Controls.Add(this.rdoTaxi);
             this.gpbVehiculos.Location = new System.Drawing.Point(292, 101);
             this.gpbVehiculos.Name = "gpbVehiculos";
             this.gpbVehiculos.Size = new System.Drawing.Size(200, 118);
@@ -160,38 +160,38 @@
             this.gpbVehiculos.TabStop = false;
             this.gpbVehiculos.Text = "Vehiculos";
             // 
-            // rdbParticular
+            // rdoParticular
             // 
-            this.rdbParticular.AutoSize = true;
-            this.rdbParticular.Location = new System.Drawing.Point(19, 80);
-            this.rdbParticular.Name = "rdbParticular";
-            this.rdbParticular.Size = new System.Drawing.Size(69, 17);
-            this.rdbParticular.TabIndex = 2;
-            this.rdbParticular.TabStop = true;
-            this.rdbParticular.Text = "Particular";
-            this.rdbParticular.UseVisualStyleBackColor = true;
+            this.rdoParticular.AutoSize = true;
+            this.rdoParticular.Location = new System.Drawing.Point(19, 80);
+            this.rdoParticular.Name = "rdoParticular";
+            this.rdoParticular.Size = new System.Drawing.Size(69, 17);
+            this.rdoParticular.TabIndex = 2;
+            this.rdoParticular.TabStop = true;
+            this.rdoParticular.Text = "Particular";
+            this.rdoParticular.UseVisualStyleBackColor = true;
             // 
-            // rdbBuseta
+            // rdoBuseta
             // 
-            this.rdbBuseta.AutoSize = true;
-            this.rdbBuseta.Location = new System.Drawing.Point(19, 54);
-            this.rdbBuseta.Name = "rdbBuseta";
-            this.rdbBuseta.Size = new System.Drawing.Size(58, 17);
-            this.rdbBuseta.TabIndex = 1;
-            this.rdbBuseta.TabStop = true;
-            this.rdbBuseta.Text = "Buseta";
-            this.rdbBuseta.UseVisualStyleBackColor = true;
+            this.rdoBuseta.AutoSize = true;
+            this.rdoBuseta.Location = new System.Drawing.Point(19, 54);
+            this.rdoBuseta.Name = "rdoBuseta";
+            this.rdoBuseta.Size = new System.Drawing.Size(58, 17);
+            this.rdoBuseta.TabIndex = 1;
+            this.rdoBuseta.TabStop = true;
+            this.rdoBuseta.Text = "Buseta";
+            this.rdoBuseta.UseVisualStyleBackColor = true;
             // 
-            // rdbTaxi
+            // rdoTaxi
             // 
-            this.rdbTaxi.AutoSize = true;
-            this.rdbTaxi.Location = new System.Drawing.Point(19, 30);
-            this.rdbTaxi.Name = "rdbTaxi";
-            this.rdbTaxi.Size = new System.Drawing.Size(45, 17);
-            this.rdbTaxi.TabIndex = 0;
-            this.rdbTaxi.TabStop = true;
-            this.rdbTaxi.Text = "Taxi";
-            this.rdbTaxi.UseVisualStyleBackColor = true;
+            this.rdoTaxi.AutoSize = true;
+            this.rdoTaxi.Location = new System.Drawing.Point(19, 30);
+            this.rdoTaxi.Name = "rdoTaxi";
+            this.rdoTaxi.Size = new System.Drawing.Size(45, 17);
+            this.rdoTaxi.TabIndex = 0;
+            this.rdoTaxi.TabStop = true;
+            this.rdoTaxi.Text = "Taxi";
+            this.rdoTaxi.UseVisualStyleBackColor = true;
             // 
             // FrmRegistroVehiculo
             // 
@@ -238,9 +238,9 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.GroupBox gpbVehiculos;
-        private System.Windows.Forms.RadioButton rdbParticular;
-        private System.Windows.Forms.RadioButton rdbBuseta;
-        private System.Windows.Forms.RadioButton rdbTaxi;
+        private System.Windows.Forms.RadioButton rdoParticular;
+        private System.Windows.Forms.RadioButton rdoBuseta;
+        private System.Windows.Forms.RadioButton rdoTaxi;
     }
 }
 

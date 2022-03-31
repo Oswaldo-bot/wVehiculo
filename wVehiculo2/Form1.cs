@@ -57,7 +57,7 @@ namespace wVehiculo2
 
             try
             {
-                if (rdbBuseta.Checked)
+                if (rdoBuseta.Checked)
                 {
                     //Instancio la Clase
                     var Buseta = new ClsCrearBuseta();
@@ -104,27 +104,39 @@ namespace wVehiculo2
         }
 
 
-        public void rdbTaxi_CheckedChanged(object sender, EventArgs e)
+        public void rdoTaxi_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdbTaxi.Checked)
+            if (rdoTaxi.Checked)
             {
                 txtMarca.Enabled = true;
                 txtPlaca.Enabled = true;
                 txtColor.Enabled = true;
                 txtModelo.Enabled = true;
+                txtPotencia.Enabled = true;
             }
         }
 
-        private void rdbBuseta_CheckedChanged(object sender, EventArgs e)
+        private void rdoBuseta_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdbBuseta.Checked)
+            if (rdoBuseta.Checked)
             {
                 txtMarca.Enabled = true;
                 txtPlaca.Enabled = true;
                 txtColor.Enabled = true;
                 txtModelo.Enabled = true;
-                txtModelo.Enabled = true;
+                txtPotencia.Enabled = false;
+            }
+        }
 
+        private void rdoParticular_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoBuseta.Checked)
+            {
+                txtMarca.Enabled = false;
+                txtPlaca.Enabled = true;
+                txtColor.Enabled = true;
+                txtModelo.Enabled = true;
+                txtPotencia.Enabled = true;
             }
         }
         private void FrmRegistroVehiculo_FormClosing(object sender, EventArgs e)

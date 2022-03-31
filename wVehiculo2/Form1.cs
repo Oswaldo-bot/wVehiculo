@@ -59,6 +59,7 @@ namespace wVehiculo2
             {
                 if (rdbBuseta.Checked)
                 {
+                    //Instancio la Clase
                     var Buseta = new ClsCrearBuseta();
                     buseta.placa = txtPlaca.Text;
                     buseta.marca = txtMarca.Text;
@@ -116,6 +117,11 @@ namespace wVehiculo2
  
         }
 
+        private void FrmRegistroVehiculo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Realmente desea salir?", "confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            e.Cancel = (resultado == DialogResult.No);
+        }
     }
 }
 

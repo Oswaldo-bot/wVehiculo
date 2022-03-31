@@ -81,6 +81,21 @@ namespace wVehiculo2
 
                     MessageBox.Show($"Informacion de la persona\r\n Marca:{Taxi.marca}\r\n Placa:{Taxi.placa}\r\n Color:{Taxi.color}\r\n Modelo:{Taxi.modelo}\r\n  {Taxi.placa + " " + Taxi.ManejarTaxi()}");
                 }
+                try
+                {
+                    var Particular = new clsCrearParticular();
+                    Particular.potencia = txtPotencia.Text;
+                    Particular.placa = txtPlaca.Text;
+                    Particular.color = txtColor.Text;
+                    Particular.modelo = txtModelo.Text;
+
+                    MessageBox.Show($"Informacion de la persona\r\n Potencia:{Particular.potencia}\r\n Placa:{Particular.placa}\r\n Color:{Particular.color}\r\n Modelo:{Particular.modelo}\r\n  {Particular.placa + " " + Particular.ManejarParticular()}");
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
             }
             catch (Exception Err)
             {
@@ -93,9 +108,9 @@ namespace wVehiculo2
         {
             if (rdbTaxi.Checked)
             {
-                txtMarca.Enabled = false;
+                txtMarca.Enabled = true;
                 txtPlaca.Enabled = true;
-                txtColor.Enabled = false;
+                txtColor.Enabled = true;
                 txtModelo.Enabled = true;
             }
         }
@@ -104,9 +119,9 @@ namespace wVehiculo2
         {
             if (rdbBuseta.Checked)
             {
-                txtMarca.Enabled = false;
+                txtMarca.Enabled = true;
                 txtPlaca.Enabled = true;
-                txtColor.Enabled = false;
+                txtColor.Enabled = true;
                 txtModelo.Enabled = true;
                 txtModelo.Enabled = true;
 
